@@ -1,0 +1,25 @@
+body{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading{
+    display: flex;
+    gap: 6px;
+    & .barrinha{
+        width: 12px;
+        height: 50px;
+        background-color: black;
+        animation: fadeOut linear infinite 1s;
+    }
+}
+@keyframes fadeOut {
+   from{
+opacity: 0%;
+   }
+   to{
+opacity: 100%;
+   }
+}
